@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+            android:text=""
+            android:layout_width="323dp"
+            android:layout_height="41dp" android:id="@+id/buttonInLocusTX1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text=""
+            android:layout_width="319dp"
+            android:layout_height="51dp" android:id="@+id/buttonInLocusTX2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonInLocusTX1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text=""
+            android:layout_width="316dp"
+            android:layout_height="46dp" android:id="@+id/buttonInLocusTX3"
+            app:layout_constraintTop_toBottomOf="@+id/buttonInLocusTX2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Update location loc"
+            android:layout_width="181dp"
+            android:layout_height="49dp" android:id="@+id/buttonINLocusBT1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="Update location pho"
+            android:layout_width="210dp"
+            android:layout_height="51dp" android:id="@+id/buttonInLocusBT2"
+            app:layout_constraintEnd_toStartOf="@+id/buttonINLocusBT1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text=""
+            android:layout_width="336dp"
+            android:layout_height="33dp" android:id="@+id/buttonInLocusTX4"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintTop_toBottomOf="@+id/buttonInLocusTX3"/>
+    <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonInLocusBT3"
+            app:layout_constraintBottom_toTopOf="@+id/buttonInLocusBT2" app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
