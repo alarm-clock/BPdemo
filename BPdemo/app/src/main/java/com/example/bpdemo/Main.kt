@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
                     btn.setOnClickListener {
                         Thread{
-                            if(locGps != null) KtorClient().sendLoc(locGps,"192.168.1.14" , 5001)
+                            if(locGps != null) KtorClient().sendLoc(locGps,"192.168.1.14" , 5001, false)
                         }.start()
                     }
                     btn2.setOnClickListener {
@@ -92,10 +92,12 @@ class MainActivity : AppCompatActivity() {
             })
         } else if( IntentHelper.isIntentPointTools(intent))
         {
-            PeriodicPositionHandler(this).refreshContent()
+            val point  = IntentHelper.getPointFromIntent(this , intent)
+            println( "point" )
+            Thread {
+                if (point != null) KtorClient().sendLoc(point.location, "192.168.1.14", 5001, true)
+            }.start()
         }
         else opennedNormally(this )
     }
-
-    override fun on
 }

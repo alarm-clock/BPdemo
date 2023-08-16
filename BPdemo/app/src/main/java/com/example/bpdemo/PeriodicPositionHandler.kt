@@ -67,7 +67,7 @@ class PeriodicPositionHandler(context: Context) {
             KtorClient().sendErr(host , port)
         } else
         {
-            KtorClient().sendLoc(uc.locMyLocation, host ,port)
+            KtorClient().sendLoc(uc.locMyLocation, host ,port , false)
             println(uc.locMyLocation.latitude)
 
         }
